@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomrlurios</title>
+    <style>
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 600px
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!--  metodos  GET O POST -->
+    <form class="form" method="GET" autocomplete="on">
+        <input type="button" value="enviar información" disabled>
+        <input type="checkbox">
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="email">
+        <input type="file" multiple>
+        <input type="hidden">
+        <input type="image">
+        <input type="month">
+        <input type="number">
+        <input type="password">
+        <input type="range">
+        <input type="reset">
+        <input type="search" value="hola">
+        <input type="submit">
+        <input type="tel" value="">
+        <input type="text" value="hola" size="10" minlength="0" maxlength="10">
+        <input type="time">
+        <input type="url">
+        <input type="week" id="">
+        <textarea name="message" rows="10" cols="30">
+            The cat was playing in the garden.
+            </textarea>
+    </form>
+
+
+    <br><br><br>
+    <form action="">
+        <fieldset>
+            <legend>Formulario</legend>
+            <label for="email">correo</label>.
+            <input type="email" name="email" id="email" tabindex="1" placeholder="Ingresa tu correo" required autofocus>
+            <label for="password">password</label>.
+            <input type="password" name="password" id="password" tabindex="2" placeholder="ingresa tu password"
+                required>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+
+    <br><br><br>
+    <form>
+        <label for="cars" id="">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+    </form>
+
+    <br><br><br>
+
+    <form action="">
+        <label for="">navegadores</label>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+</body>
+
+</html>
