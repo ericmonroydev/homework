@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        section {
+            width: 100%;
+            height: 100vh;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            max-width: 520px;
+            height: auto;
+            padding: 22px;
+            border: 1px solid #636363;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 28px;
+        }
+
+        label {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 8px;
+            margin-top: 12px;
+        }
+
+        input {
+            width: 100%;
+            height: 28px;
+            border-radius: 8px;
+            border: none;
+            padding: 4px;
+            outline: none;
+            color: black;
+        }
+
+        input::placeholder {
+            color: #6c6c6c;
+        }
+
+        input[type="submit"] {
+            margin-top: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #6c6c6c;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <form action="" method="post">
+            <h2>Registrate</h2>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="ingresa tu nombre" value="" name="nombre" required />
+            <br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" placeholder="ingresa tus apellidos" value="" name="apellidos" required />
+            <br>
+            <label>Género</label>
+            <span>
+                <label for="femenino"> Femenino<input type="radio" name="sexo" id="femenino" value="femenino"></label>
+                <label for="masculino">Masculino<input type="radio" name="sexo" id="masculino"
+                        value="masculino"></label>
+            </span>
+            <br>
+            <label>Selecciona marcas de interes</label>
+            <span>
+                <label>Ford<input type="checkbox" name="ford" id="ford"></label>
+                <label>Mustang<input type="checkbox" name="mustanng" id="mustanng"></label>
+                <label>BMW<input type="checkbox" name="bmw" id="bmw"></label>
+                <label>Nissan<input type="checkbox" name="nissan" id="nissan"></label>
+                <label>Chevrolet<input type="checkbox" name="chevrolet" id="chevrolet"></label>
+            </span>
+            <input type="submit" value="Registrarse" />
+            <br>
+        </form>
+    </section>
+</body>
+
+</html>
