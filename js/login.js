@@ -23,9 +23,11 @@ let x = 5;
 
 */
 
-const foco = document.getElementById("email")
-foco.focus();
-let x = 5;
+
+function main() {
+    const foco = document.getElementById("email")
+    foco.focus();
+}
 
 
 
@@ -57,10 +59,16 @@ function login() {
     }
 }
 
+function obtenerDatos() {
+    console.log(obtenerUsuario());
+    const usuario = obtenerUsuario();
+    const perfil = document.getElementById("perfil");
+    perfil.innerHTML = usuario.email;
+}
 
 function cerrarSesion() {
-    localStorage.clear();
-    location.href = "login.html"
+    limpiarStorage();
+    location.href = "login.html";
 }
 
 

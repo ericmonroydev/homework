@@ -19,7 +19,10 @@ function guardarUsuario(email) {
 function obtenerUsuario() {
     const datos = localStorage.getItem("usuario");
     const usuario = JSON.parse(datos);
-    const perfil = document.getElementById("perfil");
-    perfil.innerHTML = usuario.email;
+    return usuario;
 }
 
+
+function limpiarStorage() {
+    localStorage.clear();
+}
