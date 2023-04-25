@@ -18,7 +18,3 @@ function edad(a) {
 
 
 imprimiNombre();
-
-
-
-
