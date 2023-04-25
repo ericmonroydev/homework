@@ -27,10 +27,13 @@ const foco = document.getElementById("email")
 foco.focus();
 let x = 5;
 
+
+
 function login() {
     event.preventDefault();
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
+
     const mensaje = document.getElementById("mensaje");
     const contrasena = "1234567";
     const validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
@@ -40,8 +43,9 @@ function login() {
             //alert("ENTRANDO");
             mensaje.innerHTML = "ENTRANDO";
             mensaje.classList.add("exito");
-            guardar();
-            location.href = "bienvenido.html"
+            location.href = "bienvenido.html";
+            // ejecutamos funcion de guardar datos
+            guardarUsuario(email);
         } else {
             mensaje.innerHTML = "CONTRASEÑA INCORRECTA";
             // mensaje.classList.remove("exito"); 
@@ -51,10 +55,12 @@ function login() {
         mensaje.innerHTML = "INGRESA TUS DATOS CORRECTAMENTE";
         mensaje.classList.add("error");
     }
-
 }
 
 
-
+function cerrarSesion() {
+    localStorage.clear();
+    location.href = "login.html"
+}
 
 

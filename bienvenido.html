@@ -6,15 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido</title>
+
+    <style>
+        .email {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Bienvenido</h1>
-    <div id="perfil"></div>
+    <h1>Dashboard</h1>
+    <div class="email">
+        <h4>Email: </h4><label id="perfil"></label>
+    </div>
+    <div>
+        <button type="button" onclick="cerrarSesion()">Cerrar sesion</button>
+    </div>
+    <script src="js/storage.js"></script>
+    <script src="js/login.js"></script>
     <script>
-        const datos = localStorage.getItem("usuario");
-        const perfil = document.getElementById("perfil");
-        perfil.innerHTML = datos;
+        obtenerUsuario();
     </script>
 </body>
 
