@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <div>
+        <h4>Mis datos</h4>
+        <div id="datos">
+        </div>
+        <button onclick="salir()">salir</button>
+    </div>
+    <script src="registro.js"></script>
+    <script>
+        const usuario = obtenerUsuario()
+        const datos = document.getElementById("datos")
+        const resultado = "nombre: " + usuario.nombre + " " + "apellidos: " + usuario.apellidos
+        datos.innerHTML = resultado
+    </script>
+</body>
+
+</html>
