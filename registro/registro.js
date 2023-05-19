@@ -71,7 +71,6 @@ function salir() {
     location.href = "registro.html"
 }
 
-
 main();
 
 
