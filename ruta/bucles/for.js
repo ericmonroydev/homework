@@ -143,19 +143,36 @@ const carros = [
 ]
 
 
-console.log(carros.length);// tamaño del array
+/* console.log(carros.length);// tamaño del array
 console.log(carros[0]); // ACCEDIENDO AL ARRAY POSICIÓN 0
-console.log(carros[0].type); // ACCEDIENDO AL VALOR DE TYPE EN ARRAY 0
+console.log(carros[0].type);  */// ACCEDIENDO AL VALOR DE TYPE EN ARRAY 0
 
 
 // bucle for
-for (let i = 0; i < carros.length; i++) {
+/* for (let i = 0; i < carros.length; i++) {
     let data = carros[i].data;
     for (let x = 0; x < data.length; x++) {
         console.log(carros[x].type);
     }
+} */
+
+/* for (let i = 0; i < carros.length; i++) {
+    console.log(carros[i].id)
+} */
+
+let frutas = ['🍎', '🍌', '🍓']
+/* for (let i = frutas.length - 1; i >= 0; i--) {
+    console.log(frutas[i])
+    console.log('i--', i--)
+    console.log('i', i)
+console.log('termina for--')
+} */
+
+for (let i = 0; i < frutas.length; i++) {
+    console.log('uno', i)
+    if (i === 1) {
+        console.log('entró', i)
+        break      
+    };
+    console.log('afuera', i)
 }
-
-
-
-

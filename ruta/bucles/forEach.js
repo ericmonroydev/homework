@@ -1,4 +1,4 @@
-const post = [
+ const post = [
     {
         "userId": 1,
         "id": 1,
@@ -601,7 +601,7 @@ const post = [
     }
 ]
 
-//
+/*
 function recorrer(post) {
     let body = document.getElementById("body");
     let tablaHTML = '';
@@ -614,4 +614,27 @@ function recorrer(post) {
     body.innerHTML = tablaHTML;
 }
 
-recorrer(post);
+recorrer(post); */
+
+
+
+
+let frutas = ['🍎', '🍌', '🍓']
+
+/* frutas.forEach(function (fruta, index, originalArray) {
+  console.log('La fruta: ', fruta) // imprime el elemento en la posición i
+  console.log('Indíce: ', index)
+  console.log('Array original: ', originalArray)
+}) */
+
+/* post.slice(5, 10).forEach((valor, indice, arreglo) => {
+   
+    console.log('La fruta: ', valor.id) // imprime el elemento en la posición i
+    console.log('Indíce: ', indice)
+    console.log('La fruta: ', valor.title)
+    
+}) */
+
+post.forEach((valor, indice, arreglo) => {
+   
+})
